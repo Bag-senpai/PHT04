@@ -17,7 +17,7 @@
         <h6>This is Heading 6</h6>
 
         <!-- Paragraphs -->
-        <p>This is the first line.<br>This is the second line<br>This is the third line.</p>
+        <p>This is the first line.<br/>This is the second line<br/>This is the third line.</p>
 
         <!-- Horizontal Rule -->
         <hr>
@@ -61,5 +61,48 @@
 
         <!-- Create an Anchor Point -->
         <a href = "#section1">Back to Top</a>
+
+        <!-- Placeholders -->
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus luctus mauris vitae odio vehicula auctor. Nullam quis elit sed eros tincidunt ullamcorper non et urna. Quisque posuere facilisis tortor, sit amet convallis augue ullamcorper non. Proin pellentesque enim et turpis bibendum, quis egestas tellus consectetur. Suspendisse et placerat odio. Nulla pharetra hendrerit urna, eu pellentesque quam feugiat eu. Duis non libero et justo mollis ullamcorper.</p>
+
+        <!-- HTML Forms -->
+        <form action = " ">
+            <h2>Form Example</h2>
+            <!-- Text Input -->
+            <label for = "name">Name: </label>
+            <input type = "text" name = "name" id = "name" required/>
+            <br/>
+            
+            <!-- Text Areas -->
+            <label for = "message">Message: </label>
+            <textarea type = "text" name = "message" id = "message" rows = "4" cols = "50" required>Insert your message here.</textarea>
+            <br/>
+            
+            <!-- Dropdown Menus -->
+            <label for = "gender">Gender: </label>
+            <select name = "gender" id = "gender">
+                <option value = "select">Select</option>
+                <option value = "male">Male</option>
+                <option value = "female">Female</option>
+                <option value = "other">Other</option>
+            </select>
+            <br/>
+
+            <!-- Radio Buttons -->
+            <input type = "radio" id = "option1" name = "options" value = "option1"/>
+            <label for = "option1">Option 1</label>
+            <input type = "radio" id = "option2" name = "options" value = "option2"/>
+            <label for = "option1">Option 2</label>
+            <br/>
+
+            <!-- Checkboxes -->
+            <input type = "checkbox" id = "check1" name = "checklists" value = "check1"/>
+            <label for = "check1">Checkbox 1</label>
+            <input type = "checkbox" id = "check2" name = "checklists" value = "check2"/>
+            <label for = "check2">Checkbox 2</label>
+            <br/>
+
+            <button type = "submit">Submit</button>
+        </form>
     </body>
 </html>
