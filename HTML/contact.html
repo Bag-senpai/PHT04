@@ -1,0 +1,74 @@
+<!DOCTYPE>
+<html>
+<head>
+  <title>Contact Form</title>
+</head>
+<body>
+  <h1>Contact Form</h1>
+
+  <form>
+    <div>
+      <label for = "name">Name: </label>
+      <input type = "text" id = "name" name = "name" required/>
+    </div>
+    <br/>
+
+    <div>
+      <label for = "email">Email: </label>
+      <input type = "email" id = "email" name = "email" required/>
+    </div>
+    <br/>
+
+    <div>
+      <label for = "authenticationcode">Authentication Code: </label>
+      <input type = "password" name = "authenticationcode" id = "authenticationcode" required/>
+    </div>
+    <br/>
+
+    <div>
+      <label for = "message">Message: </label><br/>
+      <textarea type = "text" id = "message" name = "message" rows = "3" cols = "30" required></textarea>
+    </div>
+    <br/>
+
+    <div>
+      <label for = "subject">Subject: </label>
+      <input type = "text" id = "subject" name = "subject" required/>
+    </div>
+    <br/>
+
+    <div>
+      <label for = "phone">Phone: +63</label>
+      <input type = "text" id = "phone" name = "phone" required pattern="9"/>
+    </div>
+    <br/>
+
+    <div>
+      <label for = "priority">Priority: </label>
+      <select id = "priority" name = "priority">
+        <option value = "low">Low</option>
+        <option value = "medium">Medium</option>
+        <option value = "high">High</option>
+      </select>
+    </div>
+    <br/>
+
+    <div>
+      <label for = "newsletter">Newsletter Subscription: </label>
+      <input type = "checkbox" id = "newsletter" name = "newsletter" value = "newsletterOK"/>
+    </div>
+    <br/>
+
+    <div>
+      <label>Gender: </label>
+      <input type = "radio" id = "male" name = "gender" value = "male">
+      <label for = "male">Male</label>
+      <input type = "radio" id = "female" name = "gender" value = "female">
+      <label for = "female">Female</label>
+    </div>
+    <br/>
+
+    <button type = "submit">Submit</button>
+  </form>
+</body>
+</html>
