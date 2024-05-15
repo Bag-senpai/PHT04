@@ -1,4 +1,4 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html>
 <head>
   <title>Contact Form</title>
@@ -9,19 +9,19 @@
   <form>
     <div>
       <label for = "name">Name: </label>
-      <input type = "text" id = "name" name = "name" required/>
+      <input type = "text" id = "name" name = "name" pattern = "[a-zA-Z]+(\.\s[a-zA-Z0-9]+|\s[a-zA-Z0-9]+)*[a-zA-Z]" required/>
     </div>
     <br/>
 
     <div>
       <label for = "email">Email: </label>
-      <input type = "email" id = "email" name = "email" required/>
+      <input type = "email" id = "email" name = "email" pattern = "[a-zA-Z0-9]+(|\.[a-zA-Z0-9]+)*@[a-zA-Z0-9]+(|\.[a-zA-Z0-9]+)*[a-zA-Z0-9]" required/>
     </div>
     <br/>
 
     <div>
       <label for = "authenticationcode">Authentication Code: </label>
-      <input type = "password" name = "authenticationcode" id = "authenticationcode" required/>
+      <input type = "password" name = "authenticationcode" id = "authenticationcode" pattern = ".{8,}" required/>
     </div>
     <br/>
 
@@ -38,8 +38,8 @@
     <br/>
 
     <div>
-      <label for = "phone">Phone: +63</label>
-      <input type = "text" id = "phone" name = "phone" required pattern="9"/>
+      <label for = "phone">Phone: </label>
+      <input type = "text" id = "phone" name = "phone" required pattern="09[0-9]{9}"/>
     </div>
     <br/>
 
@@ -61,7 +61,7 @@
 
     <div>
       <label>Gender: </label>
-      <input type = "radio" id = "male" name = "gender" value = "male">
+      <input type = "radio" id = "male" name = "gender" value = "male" required>
       <label for = "male">Male</label>
       <input type = "radio" id = "female" name = "gender" value = "female">
       <label for = "female">Female</label>
