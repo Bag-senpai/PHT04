@@ -1,0 +1,49 @@
+/* Universal Selector */
+* {
+    color: yellow;
+}
+
+/* Element Selector */
+h1 {
+    color:Pink;
+}
+
+/* Class */
+.parag1 {
+    color: chocolate;
+}
+
+/* ID */
+#parag2 {
+    color: magenta;
+}
+
+/* Attribute Selector */
+[href] {
+    color: brown;
+}
+
+/* element[attribute] */
+a[href] {
+    color:chartreuse;
+}
+
+h2,
+h3
+/* earlier rule */ {
+    font-size: 20px;
+    background-color: peachpuff;
+}
+
+h2,
+#h3
+/* later rule - MORE PRIORITY */ {
+    font-size: 20px;
+    background-color: lavender;
+}
+
+/* Psuedo Classes */
+#h3:hover {
+    background-color: skyblue;
+    color: black;
+}
