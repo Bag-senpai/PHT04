@@ -1,0 +1,64 @@
+* {
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    text-align: center;
+    font-style: bold;
+}
+
+div {
+    max-width: fit-content;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box-style {
+    align-content: center;
+    width: 350px;
+    text-align: center;
+    border-style: solid;
+    font-size: large;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: inline-block;
+    margin-left: 25px;
+    margin-right: 25px;
+    font-size: 25px;
+}
+
+.box-style:hover {
+    background-color: cyan;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+.img-icon {
+    height: 256px;
+    width: 256px;
+}
+
+aside {
+    margin-top: 300px;
+    text-align: center;
+}
+
+a {
+    color:black;
+}
+
+#attrib {
+    color: gray;
+    text-decoration: none;
+}
+
+#attrib:hover {
+    color: black;
+}
