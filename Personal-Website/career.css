@@ -3,17 +3,16 @@
 }
 
 header {
-    margin-top: 150px;
+    margin-top: 50px;
     text-align: center;
     font-style: bold;
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 40px;
 }
 
 h3 {
-    margin-top: 150px;
     text-align: center;
     font-size: 30px;
 }
@@ -25,7 +24,6 @@ h4 {
 
 p {
     font-size: 25px;
-    max-width: 60%;
     margin-left: auto;
     margin-right: auto;
     text-align: justify;
@@ -36,8 +34,8 @@ p {
 }
 
 .img-small {
-    height: 300px;
-    width: 300px;
+    height: 200px;
+    width: 200px;
 }
 
 a {
@@ -59,4 +57,52 @@ nav>h4 {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+}
+
+div {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    max-width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+}
+
+.box-style {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-content: center;
+    max-width: 100%;
+    text-align: left;
+    border: 2px solid gray;
+    font-size: medium;
+    display: block;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: black;
+}
+
+.box-style:hover {
+    background-color: cyan;
+}
+
+.img-smaller {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+}
+
+.img-smaller-morespace {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+}
+
+.inbox-style {
+    display: inline-block;
+    vertical-align: top;
 }
