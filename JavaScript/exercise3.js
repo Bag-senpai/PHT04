@@ -28,7 +28,12 @@ function multiply(a, b) {
     console.log("The product is", a * b + ".");
 }
 function divide(a, b) {
-    console.log("The quotient is", a / b + ".");
+    if (b != 0){
+        console.log("The quotient is", a / b + ".");
+    }
+    else {
+        console.log("Division by 0 is not allowed.");
+    }
 }
 mathOperation(3, 3, add);
 mathOperation(3, 3, subtract);

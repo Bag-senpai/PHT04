@@ -11,4 +11,4 @@ function localscope() {
 }
 
 localscope();
-console.log(localVar);
+// console.log(localVar); - throws an error since localVar is a local variable
