@@ -48,34 +48,29 @@ a:hover {
     text-align: center;
 }
 
-nav>h4 {
-    max-width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-
 div {
     margin-top: 30px;
     margin-bottom: 50px;
     max-width: 65%;
+    align-content: center;
     margin-left: auto;
     margin-right: auto;
-    align-content: center;
 }
 
 .box-style {
+    vertical-align: text-top;
     margin-top: 10px;
     margin-bottom: 10px;
-    align-content: center;
-    max-width: 100%;
+    max-width: 150px;
     text-align: left;
     border: 2px solid gray;
-    font-size: medium;
-    display: block;
+    font-size: 20px;
+    display: inline-block;
     padding-left: 25px;
     padding-right: 25px;
     color: black;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .box-style:hover {
@@ -84,31 +79,20 @@ div {
 
 .img-smaller {
     margin-top: 10px;
-    margin-bottom: 10px;
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
     display: inline-block;
 }
 
-.img-smaller-morespace {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    height: 100px;
-    width: 100px;
-    display: inline-block;
+.pinbox {
+    font-size: 20px;
+    text-align: center;
+    height: 53px;
 }
 
-.inbox-style {
-    display: inline-block;
-    vertical-align: top;
-}
-
-#social-links {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    height: 15.4px;
-    width: 100px;
-    background-color: black;
-    padding-top: 42.3px;
-    padding-bottom: 42.3px;
+.flex-box {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
