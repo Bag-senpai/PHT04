@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+    <title>Local Storage</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        * {
+            font-family: "Roboto", sans-serif;
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+        table {
+            border-collapse: collapse;
+            border: 2px solid;
+        }
+        th, td {
+            text-align: center;
+            border-right: 2px solid;
+            border-bottom: 2px solid;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <button id = "addTaskButton" type = "button">Add Task</button>
+    <button type = "button" id = "deleteTaskButton">Delete Task</button>
+    <form id = "addTask" hidden = true>
+        <label for = "task">Task to add: </label>
+        <input type = "text" id = "task"/>
+        <button type = "button" id = "submitTask">Submit</button>
+    </form>
+    <form id = "deleteTask" hidden = true>
+        <label for = "taskdel">Key of task to delete: </label>
+        <input type = "number" id = "taskdel"/>
+        <button type = "button" id = "submitTaskDelete">Submit</button>
+    </form>
+    <p id = "log"></p>
+    <p>Current Tasks:</p>
+    <table id = "taskTable">
+    </table>
+    <script src = "my-script.js"></script>
+</body>
+</html>
