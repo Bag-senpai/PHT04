@@ -61,7 +61,7 @@ div {
     vertical-align: text-top;
     margin-top: 10px;
     margin-bottom: 10px;
-    max-width: 150px;
+    max-width: 180px;
     text-align: left;
     border: 2px solid gray;
     font-size: 20px;
@@ -79,15 +79,16 @@ div {
 
 .img-smaller {
     margin-top: 10px;
-    height: 150px;
-    width: 150px;
+    height: 240px;
+    width: 180px;
     display: inline-block;
 }
 
 .pinbox {
     font-size: 20px;
     text-align: center;
-    height: 53px;
+    height: 60px;
+    max-width: 220px;
 }
 
 .flex-box {
@@ -95,4 +96,8 @@ div {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+}
+
+marquee {
+    margin-bottom: -5px;
 }

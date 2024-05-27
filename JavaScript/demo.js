@@ -1,63 +1,67 @@
-// Creating array
-let names = ["Bernard", "Alex", "Janine", "Zyra"];
-console.log(names);
+// create arrays
+let countries = ["Philippines", "Australia", "Cambodia", "Thailand"];
+console.log(countries);
 
-// Length of arrays
-console.log(names.length);
+// arrays start at index 0
+// array.length
+console.log(countries.length);
 
-// Accessing array elements
-console.log(names[1]);
-console.log(names[2]);
-console.log(names[names.length - 1]);
+// access individual elements
+// arrayname[index]
+console.log(countries[0]);
+console.log(countries[1]);
 
-// Modifying Elements
-names[0] = "Lyra";
-console.log(names);
-names[1] = "Alexie";
-console.log(names);
+// modifying elements
+// arrayname[index] = newelement
+countries[2] = "Laos";
+console.log(countries);
 
-// Push
-names.push("Bernard");
-console.log(names);
-names.push("Alex", "Sarah", "Lexi"); // pushes multiple elements
-console.log(names);
+// push
+// places elements to the end of the array
+// array.push(elements); -multiple elements can be added
+countries.push("Cambodia");
+console.log(countries);
+countries.push("United States", "Netherlands", "France");
+console.log(countries);
 
-// Pop
-names.pop();
-console.log(names);
-names.pop("Alexie");  // does not remove Alexie, removes at end
-console.log(names);
-names.pop(2);         // does not remove 2 elements, just one
-console.log(names);
+// pop
+// removes elements from the end of the array
+// array.pop()
+countries.pop();
+console.log(countries);
+countries.pop(3);
+console.log(countries); // only one element can be removed in pop()
+countries.pop("Australia");
+console.log(countries); // only element in the end of the array gets removed
 
-// Array Iteration
-for (let i = 0; i < names.length; i++){
-    console.log(names[i]);
+// array iteration
+for (let i = 0; i < countries.length; i++) {
+    console.log(countries[i]);
 }
 
-// forEach
-names.forEach(function(name){
-    console.log(name);
-});
+// foreach
+// array.foreach(function(paramaters){code})
+countries.forEach(function(element){
+    console.log(element);
+})
 
-// Array Method
-// Length
+// array methods
+// array.length
 
-// indexOf
-console.log(names.indexOf("Bernard"));
-console.log(names.indexOf("Zyra"));
-console.log(names.indexOf("Sarah"));
+// array.indexOf(element);
+console.log(countries.indexOf("Australia")); // outputs element index
+// outputs -1 if element is not in the array
+console.log(countries.indexOf("Mexico"));
 
-// Join
-console.log(names.join("/"));
+// array.join(separator);
+console.log(countries.join("-"));
 
-// Slice (start - included, end - excluded)
-let numbers = [1, 2, 3, 4, 5, 6];
-// console.log(numbers.slice(0, 2));
-// console.log(numbers.slice(2, 5));
+// array.slice(starting index inclusive, last index exclusive);
+let countries2 = countries.slice(0, 4);
+console.log(countries2);
 
-// Splice 
-let removedNumbers = numbers.splice(0, 2);
-console.log(removedNumbers);
-console.log(numbers);
+// array.splice(starting index inclusive, last index exclusive);
+let removedCountries = countries.splice(0, 4);
+console.log(countries);
+console.log(removedCountries);
 

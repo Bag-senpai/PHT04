@@ -1,53 +1,40 @@
-// Creating arrays
-let fruits = ["apple", "banana", "orange", "mango"];
-console.log(fruits);
+// array creation
+let countries = ["Philippines", "America", "Lebanon", "Japan", "Korea"];
+console.log(countries);
 
-// Accessing individual elements
-// Third fruit
-console.log("Third fruit:", fruits[2]);
-console.log("First fruit:", fruits[0]);
-console.log("Last fruit:", fruits[fruits.length - 1]);
+// array length
+// array.length
+console.log(countries.length);
 
-// Modifying elements
-fruits[1] = "grapes";
-console.log(fruits);
+// accessing individual elements
+// array[index]
+console.log(countries[0]);
+console.log(countries[2]);
 
-// .push - adds an element at the end
-fruits.push("banana");
-console.log(fruits);
+// push - adds elements in the end of the array
+// array.push(elements)
+countries.push("Palawan");
+console.log(countries);
+countries.push("United Kingdom", "Netherlands", "France");
+console.log(countries);
 
-// .pop - removes an element at the end
-fruits.pop();
-console.log(fruits);
+// pop - removes elements from the end of the array
+// array.pop()
+countries.pop();
+console.log(countries);
+countries.pop(4); // only removes 1 element from the end
+console.log(countries);
+countries.pop("America");
+console.log(countries); // only removes from the end of the array
 
-// array iteration
-for (let i = 0; i < fruits.length; i++) {
-    console.log("Fruits:", fruits[i]);
+// array iteration - iterate on the index
+for (let i = 0; i < countries.length; i++) {
+    console.log(countries[i])
 }
 
-// forEach
-colors = ["red", "blue", "yellow"];
-colors.forEach(function (color) {
-    console.log(color);
-});
+// forEach - iterate on the element
+// array.forEach(function(element){code});
+countries.forEach(function(country){
+    console.log(country);
+})
 
-// Array methods
-let numbers = [1, 2, 3, 4, 5];
-
-// length
-console.log("Array length:", numbers.length);
-
-// indexOf
-console.log("Index of 3:", numbers.indexOf(3));
-
-// join
-console.log("Joined array:", numbers.join("-"));
-
-// slice
-let slicedArray = numbers.slice(1, 3); // start is included, end is excluded
-console.log(slicedArray);
-
-// splice
-let removedElements = numbers.splice(1, 3); // (<start>, <number of elements to remove>)
-console.log("Removed elements:", removedElements);
-console.log("Updated array:", numbers);
